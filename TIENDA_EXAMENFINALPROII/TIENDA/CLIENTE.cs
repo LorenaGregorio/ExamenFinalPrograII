@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TIENDA_EXAMENFINALPROII.TIENDA
 {
-    class CLIENTE
+    public class CLIENTE
     {
+        public string Nombres { get; set; }
+
+        public string Apellidos { get; set; }
+
+        public string Carrera { get; set; }
     }
 }
