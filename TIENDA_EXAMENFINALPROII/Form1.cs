@@ -128,22 +128,20 @@ namespace TIENDA_EXAMENFINALPROII
                     promedio = (Convert.ToDouble(valorInicial) + Convert.ToDouble(valorFinal));
                     txtprom.Text = promedio.ToString();
                     //    btnigual.Focus();
-
                     break;
-                    //case "*":
-                    //    resultado = Convert.ToDouble(valorInicial) * Convert.ToDouble(valorFinal);
-                    //    PANTALLA.Text = resultado.ToString();
-                    //    break;
-                    //case "-":
-                    //    resultado = Convert.ToDouble(valorFinal) - Convert.ToDouble(valorInicial);
-                    //    PANTALLA.Text = resultado.ToString();
-                    //    break;
-                    //case "/":
-                    //    resultado = Convert.ToDouble(valorFinal) / Convert.ToDouble(valorInicial);
-                    //    PANTALLA.Text = resultado.ToString();
-                    //    break;
+                   
             }
+            valorInicial = promedio.ToString();
+            signoActual = "";
+            valorFinal = "";
+            contadorCalculos += 1;
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            signoActual = "+";
+            txtprom.Text = "";
         }
     }
 }
