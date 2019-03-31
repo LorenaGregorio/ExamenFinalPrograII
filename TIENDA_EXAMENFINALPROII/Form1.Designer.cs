@@ -47,6 +47,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +96,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.button8);
             this.groupBox2.Controls.Add(this.button7);
@@ -115,7 +117,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(170, 157);
+            this.button8.Location = new System.Drawing.Point(220, 157);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(40, 38);
             this.button8.TabIndex = 9;
@@ -203,9 +205,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(360, 22);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(300, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(120, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "TIENDA";
             // 
@@ -239,6 +242,15 @@
             this.label5.Size = new System.Drawing.Size(231, 26);
             this.label5.TabIndex = 10;
             this.label5.Text = "PROMEDIO DE ESPERA";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(58, 173);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(146, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "AÑADIR OTRO PRODUCTO";
             // 
             // Form1
             // 
@@ -280,6 +292,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
