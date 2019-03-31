@@ -26,122 +26,98 @@ namespace TIENDA_EXAMENFINALPROII
 
         private void button7_Click(object sender, EventArgs e)
         {
-            ReiniciarValores();
-            txtprom.Text = "";
+            txtprom.Clear();
 
         }
 
 
         public void AgregarValorInicial(string valor)
         {
-            valorInicial += valor;
-            txtprom.Text = valorInicial.ToString();
+           
         }
 
         
         public void agregarValorFinal(string valor)
         {
-            valorFinal += valor;
-            txtprom.Text = valorFinal.ToString();
+            
         }
 
 
         private void ReiniciarValores()
         {
-            signoActual = "";
-            valorInicial = "";
-            valorFinal = "";
-            contadorCalculos = 0;
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if ((signoActual != "") && (contadorCalculos == 0))
-            {
-                AgregarValorInicial("1");
-            }
-            else
-            {
-                agregarValorFinal("1");
-            }
-            //    btnigual.Focus();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if ((signoActual != "") && (contadorCalculos == 0))
-            {
-                AgregarValorInicial("5");
-            }
-            else
-            {
-                agregarValorFinal("5");
-            }
-            //btnigual.Focus();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if ((signoActual != "") && (contadorCalculos == 0))
-            {
-                AgregarValorInicial("2");
-            }
-            else
-            {
-                agregarValorFinal("2");
-            }
-            //btnigual.Focus();
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if ((signoActual != "") && (contadorCalculos == 0))
-            {
-                AgregarValorInicial("10");
-            }
-            else
-            {
-                agregarValorFinal("10");
-            }
-            //btnigual.Focus();
+           
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if ((signoActual != "") && (contadorCalculos == 0))
-            {
-                AgregarValorInicial("3");
-            }
-            else
-            {
-                agregarValorFinal("3");
-            }
-            //btnigual.Focus();
+          
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            double promedio = 0;
-            switch (signoActual)
+            int cal=0;
+                
+
+            if ((comboBox1.SelectedItem.Equals("0")
+                && comboBox2.SelectedItem.Equals("0"))
+                && comboBox3.SelectedItem.Equals("0")
+                 && comboBox4.SelectedItem.Equals("0")
+                   && comboBox5.SelectedItem.Equals("0"))
             {
-                case "PROMEDIO":
-                    promedio = (Convert.ToDouble(valorInicial) + Convert.ToDouble(valorFinal));
-                    txtprom.Text = promedio.ToString();
-                    //    btnigual.Focus();
-                    break;
-                   
+                MessageBox.Show("Debe selecionar un Producto");
             }
-            valorInicial = promedio.ToString();
-            signoActual = "";
-            valorFinal = "";
-            contadorCalculos += 1;
+
+            if (comboBox1.SelectedItem.Equals("1")) 
+            {
+                cal = cal + 1;
+            }
+
+            if (comboBox2.SelectedItem.Equals("1"))
+            {
+                cal = cal + 5;
+            }
+            if (comboBox3.SelectedItem.Equals("1"))
+            {
+                cal = cal + 10;
+            }
+            if (comboBox4.SelectedItem.Equals("1"))
+            {
+                cal = cal + 2;
+            }
+            if (comboBox5.SelectedItem.Equals("1"))
+            {
+                cal = cal + 3;
+            }
+            txtprom.Text = cal.ToString() + " Mins." ;
+
+           
 
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            signoActual = "+";
-            txtprom.Text = "";
+           
+           
         }
     }
 }
